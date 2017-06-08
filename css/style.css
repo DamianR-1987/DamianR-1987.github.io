@@ -62,3 +62,10 @@ h1.welcome {
     font-size: 70px;
     text-transform: uppercase;
 }
+
+.line {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border: 0px;
+}
