@@ -34,7 +34,6 @@ body {
 .navbar-default .navbar-nav > li > a {
     color: #fff;
     padding-bottom: 7px;
-    text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -60,7 +59,6 @@ h1.creative {
 h1.welcome {
     color: #fff;
     font-size: 70px;
-    text-transform: uppercase;
 }
 
 .line {
@@ -68,4 +66,18 @@ h1.welcome {
     height: 3px;
     background: #fff;
     border: 0px;
+}
+
+.btn-learn-more {
+    color: #fff;
+    background-color: transparent;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    border-radius: 0px;
+}
+
+.btn-learn-more:hover {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid transparent;
 }
