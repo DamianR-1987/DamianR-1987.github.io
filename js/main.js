@@ -6,31 +6,8 @@ $(".nav a").on("click", function () {
 });
 
 $(document).ready(function () {
-
-
-function makeProgress(){
-    $(".progress-bar").each(function(){
-        if($(this).is("active") == true){
-            var i = 0;
-            while(i < 100){
-            i = i + 1;
-            $(this).css("width", i + "%");
-            }
-        }
-        $(this).removeClass("active");
-       });
-}
+    $(".progress-bar").eq(0).animate({width:"100%"},500);
+    $(".progress-bar").eq(1).animate({width:"100%"},900);
+    //console.log($(".progress-bar").eq(2));
+    //console.log($(".progress-bar").eq(3));
 });
-    
-/*
-$(".progress-bar.active").each(function(i,e){
-console.log($(this).next(".progress-bar"));
-});
-
-$(".progress-bar[active=yes]").attr("active","no");
-console.log($(".progress-bar[active=yes]").next(".progress-bar[active=no]"));
-    
-for(j=0;j<3;j++){
-    makeProgress();
-}
-*/
