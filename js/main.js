@@ -5,10 +5,13 @@ var d = 4000; //duration per slides
 var i = 0;
     
 function progressBar(){
-    if(i == 0){
-        $progressBar.css("width","0%");
+    $progressBar.eq(i).animate({"width":pbw},d);
+    if(i==0){
+        $progressBar.addClass("notransition");
+        $progressBar.animate({width: 0},0);
+    } else {
+        $progressBar.removeClass("notransition");
     }
-    $progressBar.eq(i).animate({"width":pbw},d,"linear");
 }
     
 function slider(){
@@ -34,7 +37,7 @@ function slider(){
         } else if(i == 3){
             $("section").removeClass("slide_3");
             $("section").addClass("slide_4");
-        };
+        }
             
     },d);
 }

@@ -32,6 +32,14 @@ body {
     background: -webkit-linear-gradient(top, rgba(252,227,138,0.3) 0%,rgba(252,227,138,0.5) 51%,rgba(252,227,138,1) 100%), url("../img/slide_4.jpg") no-repeat;
 }
 
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
 .navbar {
     border: 0px solid transparent;
 }
