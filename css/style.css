@@ -7,7 +7,7 @@ body {
     height: 100vh;
     background-size: 100% 100%;
 }
-
+/*
 .slide_1 {
     background: linear-gradient(to bottom, rgba(252,227,138,0.3) 0%,rgba(252,227,138,0.5) 51%,rgba(252,227,138,1) 100%), url("../img/slide_1.png") no-repeat;
     background: -moz-linear-gradient(top, rgba(252,227,138,0.3) 0%, rgba(252,227,138,0.5) 51%, rgba(252,227,138,1) 100%), url("../img/slide_1.png") no-repeat;
@@ -40,6 +40,14 @@ body {
     transition: none !important;
 }
 
+.nextSlide, .prevSlide{
+    color: #fff;
+}
+
+.nextSlide:hover, .prevSlide:hover{
+    color: #fce38a;
+}
+*/
 .navbar {
     border: 0px solid transparent;
 }
@@ -114,7 +122,7 @@ h1.welcome {
     color: #fff;
     border: 2px solid transparent;
 }
-
+/*
 .progress {
     height: 1px;
 }
@@ -127,3 +135,4 @@ h1.welcome {
 .progress-bar-caption {
     color: white;
 }
+*/

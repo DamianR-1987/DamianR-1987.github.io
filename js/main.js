@@ -1,3 +1,4 @@
+/*
 var $progressBar = $(".progress-bar");
 var pbc = $(".progress").length; //progressbar count
 var pbw = $(".progress").width(); //progressbar width
@@ -5,15 +6,40 @@ var d = 4000; //duration per slides
 var i = 0;
     
 function progressBar(){
-    $progressBar.eq(i).animate({"width":pbw},d);
     if(i==0){
         $progressBar.addClass("notransition");
         $progressBar.animate({width: 0},0);
     } else {
         $progressBar.removeClass("notransition");
     }
+    $progressBar.eq(i).animate({"width":pbw},d);
 }
-    
+
+function prevSlide(){
+    $prevSlide = $(".prevSlide");
+    $prevSlide.on("click", function(){
+        console.log("jestem tu, i = "+i);
+        if(i == 0){
+            $progressBar.animate({"width":pbw},0);
+            i = 3;
+        } else {
+            i--;
+            $(".progress-bar:gt("+i+")").animate({"width":0},0);
+        }
+    });
+}
+
+function nextSlide(){
+    $nextSlide = $(".nextSlide");
+    $nextSlide.on("click", function(){
+        if(i == 3){
+            i = 0;
+        } else {
+            i++;
+        }
+    });
+}
+
 function slider(){
     progressBar();
         
@@ -24,6 +50,9 @@ function slider(){
            i++;
        }
         progressBar();
+        
+        prevSlide();
+        nextSlide();
         
         if(i == 0){
             $("section").removeClass("slide_4");
@@ -41,6 +70,7 @@ function slider(){
             
     },d);
 }
+*/
 
 function current(){
     $(".nav a").on("click", function () {
@@ -50,6 +80,5 @@ function current(){
 }
 
 $(document).ready(function () {
-    slider();
     current();
 });
