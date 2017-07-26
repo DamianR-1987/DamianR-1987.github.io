@@ -1,0 +1,160 @@
+body {
+    max-width: 1600px;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.slide_1 {
+    background: linear-gradient(to bottom, rgba(252,227,138,0.3) 0%,rgba(252,227,138,0.5) 51%,rgba(252,227,138,1) 100%), url("../img/slide_1.png") no-repeat;
+    background: -moz-linear-gradient(top, rgba(252,227,138,0.3) 0%, rgba(252,227,138,0.5) 51%, rgba(252,227,138,1) 100%), url("../img/slide_1.png") no-repeat;
+    background: -webkit-linear-gradient(top, rgba(252,227,138,0.3) 0%,rgba(252,227,138,0.5) 51%,rgba(252,227,138,1) 100%), url("../img/slide_1.png") no-repeat;
+}
+
+.slide_2 {
+    background: linear-gradient(to bottom, rgba(252,227,138,0.3) 0%,rgba(252,227,138,0.5) 51%,rgba(252,227,138,1) 100%), url("../img/slide_2.jpg") no-repeat;
+    background: -moz-linear-gradient(top, rgba(252,227,138,0.3) 0%, rgba(252,227,138,0.5) 51%, rgba(252,227,138,1) 100%), url("../img/slide_2.jpg") no-repeat;
+    background: -webkit-linear-gradient(top, rgba(252,227,138,0.3) 0%,rgba(252,227,138,0.5) 51%,rgba(252,227,138,1) 100%), url("../img/slide_2.jpg") no-repeat;
+}
+
+.slide_3 {
+    background: linear-gradient(to bottom, rgba(252,227,138,0.3) 0%,rgba(252,227,138,0.5) 51%,rgba(252,227,138,1) 100%), url("../img/slide_3.jpg") no-repeat;
+    background: -moz-linear-gradient(top, rgba(252,227,138,0.3) 0%, rgba(252,227,138,0.5) 51%, rgba(252,227,138,1) 100%), url("../img/slide_3.jpg") no-repeat;
+    background: -webkit-linear-gradient(top, rgba(252,227,138,0.3) 0%,rgba(252,227,138,0.5) 51%,rgba(252,227,138,1) 100%), url("../img/slide_3.jpg") no-repeat;
+}
+
+.slide_4 {
+    background: linear-gradient(to bottom, rgba(252,227,138,0.3) 0%,rgba(252,227,138,0.5) 51%,rgba(252,227,138,1) 100%), url("../img/slide_4.jpg") no-repeat;
+    background: -moz-linear-gradient(top, rgba(252,227,138,0.3) 0%, rgba(252,227,138,0.5) 51%, rgba(252,227,138,1) 100%), url("../img/slide_4.jpg") no-repeat;
+    background: -webkit-linear-gradient(top, rgba(252,227,138,0.3) 0%,rgba(252,227,138,0.5) 51%,rgba(252,227,138,1) 100%), url("../img/slide_4.jpg") no-repeat;
+}
+
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
+.navbar {
+    border: 0px solid transparent;
+}
+
+.navbar-default {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #fce38a;
+}
+
+.navbar > .container .navbar-brand {
+    margin-left: 130px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    padding-bottom: 7px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #fce38a;
+    border-bottom: 2px solid #fce38a;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #fce38a;
+    background-color: transparent;
+    border-bottom: 2px solid #fce38a;
+}
+
+h1.creative {
+    color: #fff;
+    font-size: 50px;
+    padding-top: 20px;
+    font-family: 'Merienda', cursive;
+}
+
+h1.welcome {
+    color: #fff;
+    font-size: 70px;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border: 0px;
+}
+
+.btn-learn-more {
+    color: #fff;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    border: 2px solid #fff;
+    border-radius: 0px;
+}
+
+.btn-learn-more:hover {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+.progress {
+    height: 1px;
+}
+
+.progress-bar {
+    height: 1px;
+    background-color: #f38181;
+}
+
+.progress-bar-caption {
+    color: white;
+}
+
+#searchForm {
+    display: none;
+}
+
+.form-control {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.form-control:focus {
+    border-color: #fce38a;    
+}
+
+/* .form-control placeholder */
+.form-control::-webkit-input-placeholder { color: #fff; } /* Webkit, Blink, Edge */
+.form-control:-moz-placeholder { color: #fff; opacity: 1; } /* Firefox 4-18 */
+.form-control::-moz-placeholder { color: #fff; opacity: 1; } /* Firefox 19+ */
+.form-control:-ms-input-placeholder { color: #fff; } /* IE 10-11 */
+.form-control::-ms-input-placeholder { color: #fff; } /* Edge */
+
+#btn-find {
+    color: #fff;
+    text-decoration: none;
+}
+
+#btn-find:hover {
+    color: #fce38a;
+    border-bottom: 2px solid #fce38a;
+}
