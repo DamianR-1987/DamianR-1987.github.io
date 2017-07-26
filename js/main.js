@@ -1,10 +1,17 @@
-/*
+
 var $progressBar = $(".progress-bar");
 var pbc = $(".progress").length; //progressbar count
 var pbw = $(".progress").width(); //progressbar width
 var d = 4000; //duration per slides
 var i = 0;
-    
+
+function current(){
+    $(".nav a").on("click", function () {
+        $("nav").find(".sr-only").remove(".sr-only");
+        $(this).append("<span class='sr-only'>(current)</span>");
+    });
+}
+
 function progressBar(){
     if(i==0){
         $progressBar.addClass("notransition");
@@ -13,31 +20,6 @@ function progressBar(){
         $progressBar.removeClass("notransition");
     }
     $progressBar.eq(i).animate({"width":pbw},d);
-}
-
-function prevSlide(){
-    $prevSlide = $(".prevSlide");
-    $prevSlide.on("click", function(){
-        console.log("jestem tu, i = "+i);
-        if(i == 0){
-            $progressBar.animate({"width":pbw},0);
-            i = 3;
-        } else {
-            i--;
-            $(".progress-bar:gt("+i+")").animate({"width":0},0);
-        }
-    });
-}
-
-function nextSlide(){
-    $nextSlide = $(".nextSlide");
-    $nextSlide.on("click", function(){
-        if(i == 3){
-            i = 0;
-        } else {
-            i++;
-        }
-    });
 }
 
 function slider(){
@@ -50,10 +32,7 @@ function slider(){
            i++;
        }
         progressBar();
-        
-        prevSlide();
-        nextSlide();
-        
+                
         if(i == 0){
             $("section").removeClass("slide_4");
             $("section").addClass("slide_1");
@@ -70,15 +49,25 @@ function slider(){
             
     },d);
 }
-*/
 
-function current(){
-    $(".nav a").on("click", function () {
-        $("nav").find(".sr-only").remove(".sr-only");
-        $(this).append("<span class='sr-only'>(current)</span>");
+function searchButton(){
+    var $searchBtn = $("#searchBtn");
+    $searchBtn.on("click", function(){
+        $("#searchForm").fadeToggle();
     });
+}
+
+function showShoppingCartModal(){
+    var $shoppingCartBtn = $("#shoppingCartBtn");
+    $shoppingCartBtn.on("click", function(){
+       $("#shoppingCartModal").modal(); 
+    });
+    
 }
 
 $(document).ready(function () {
     current();
+    slider();
+    searchButton();
+    showShoppingCartModal();
 });
