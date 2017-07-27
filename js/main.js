@@ -59,6 +59,7 @@ function searchButton(){
 
 function showShoppingCartModal(){
     var $shoppingCartBtn = $("#shoppingCartBtn");
+    
     $shoppingCartBtn.on("click", function(){
        $("#shoppingCartModal").modal(); 
     });
