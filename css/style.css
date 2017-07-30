@@ -48,6 +48,9 @@ body {
 }
 
 .navbar-default .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -60,6 +63,9 @@ body {
 }
 
 .navbar-default .navbar-nav > li > a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
     color: #fff;
     padding-bottom: 7px;
 }
@@ -82,14 +88,17 @@ body {
 
 h1.creative {
     color: #fff;
-    font-size: 50px;
+    font-size: 47px;
     padding-top: 20px;
-    font-family: 'Merienda', cursive;
+    font-family: 'Kaushan Script', cursive;
 }
 
 h1.welcome {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     color: #fff;
-    font-size: 70px;
+    font-size: 100px;
+    padding-left: 17px;
 }
 
 .line {
@@ -100,6 +109,9 @@ h1.welcome {
 }
 
 .btn-learn-more {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
     color: #fff;
     background-color: transparent;
     margin-top: 20px;
@@ -128,6 +140,8 @@ h1.welcome {
 }
 
 .progress-bar-caption {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
     color: white;
 }
 
@@ -146,13 +160,16 @@ h1.welcome {
 }
 
 /* .form-control placeholder */
-.form-control::-webkit-input-placeholder { color: #fff; } /* Webkit, Blink, Edge */
-.form-control:-moz-placeholder { color: #fff; opacity: 1; } /* Firefox 4-18 */
-.form-control::-moz-placeholder { color: #fff; opacity: 1; } /* Firefox 19+ */
-.form-control:-ms-input-placeholder { color: #fff; } /* IE 10-11 */
-.form-control::-ms-input-placeholder { color: #fff; } /* Edge */
+.form-control::-webkit-input-placeholder { color: #fff; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 9px; } /* Webkit, Blink, Edge */
+.form-control:-moz-placeholder { color: #fff; opacity: 1; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 9px; } /* Firefox 4-18 */
+.form-control::-moz-placeholder { color: #fff; opacity: 1; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 9px; } /* Firefox 19+ */
+.form-control:-ms-input-placeholder { color: #fff; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 9px; } /* IE 10-11 */
+.form-control::-ms-input-placeholder { color: #fff; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 9px; } /* Edge */
 
 #btn-find {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
     color: #fff;
     text-decoration: none;
 }
@@ -161,6 +178,7 @@ h1.welcome {
     color: #fce38a;
     border-bottom: 2px solid #fce38a;
 }
+
 
 @media (min-width: 768px){
     .navbar>.container .navbar-brand {
@@ -171,11 +189,5 @@ h1.welcome {
 @media  (max-width: 767px) {
     #searchBtn {
         display: none;
-    }
-}
-
-@media (max-width: 991px){
-    body {
-        font-size: 11px;
     }
 }
