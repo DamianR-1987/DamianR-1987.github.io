@@ -34,17 +34,17 @@ function slider(){
         progressBar();
                 
         if(i == 0){
-            $("section").removeClass("slide_4");
-            $("section").addClass("slide_1");
+            $(".banner").removeClass("slide_4");
+            $(".banner").addClass("slide_1");
         } else if(i == 1){
-            $("section").removeClass("slide_1");
-            $("section").addClass("slide_2");
+            $(".banner").removeClass("slide_1");
+            $(".banner").addClass("slide_2");
         } else if(i == 2){
-            $("section").removeClass("slide_2");
-            $("section").addClass("slide_3");
+            $(".banner").removeClass("slide_2");
+            $(".banner").addClass("slide_3");
         } else if(i == 3){
-            $("section").removeClass("slide_3");
-            $("section").addClass("slide_4");
+            $(".banner").removeClass("slide_3");
+            $(".banner").addClass("slide_4");
         }
             
     },d);
