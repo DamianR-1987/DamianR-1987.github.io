@@ -228,39 +228,71 @@ h1.welcome {
     margin-right: 28px;
 }
 
-.image {
-    opacity: 1;
+.aboutus-pic .image {
     display: block;
     width: 100%;
     height: auto;
-    transition: 0.5s ease;
-    backface-visibility: hidden;
 }
 
-.photo-caption {
-    transition: 0.5s ease;
+.aboutus-pic .photo-caption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
     opacity: 0;
+    transition: 0.5s ease;
+    background: linear-gradient(to bottom, rgba(252,227,138,0.3) 0%,rgba(252,227,138,0.5) 51%,rgba(252,227,138,1) 100%) no-repeat;
+    background: -moz-linear-gradient(top, rgba(252,227,138,0.3) 0%, rgba(252,227,138,0.5) 51%, rgba(252,227,138,1) 100%) no-repeat;
+    background: -webkit-linear-gradient(top, rgba(252,227,138,0.3) 0%,rgba(252,227,138,0.5) 51%,rgba(252,227,138,1) 100%) no-repeat;
+    /*background-color: #008cba;*/
+}
+
+.aboutus-pic .container-photo:hover .photo-caption {
+    opacity: 1;
+    
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+    box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+}
+
+.aboutus-pic .photo-caption-content {
+    width: 161px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 24px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase;
 }
 
-.container-photo:hover .image {
-    opacity: 0.3;
+.facts {
+    display: flex;
+    height: 272px;
+    background-color: #95e1d3;
 }
 
-.container-phopto:hover .photo-caption {
-    opacity: 0.3;
+.vertical-line {
+    /*display: inline-block;*/
+    width: 4px;
+    height: 100%;
+    background-color: #b5eae0;
+}
+/*
+.facts-numbers {
+    display: inline-block;
 }
 
-.photo-caption-content {
-    background-color: #4caf50;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+.facts-text {
+    display: inline-block;
 }
+*/
 /*******************/
 
 @media (min-width: 768px){
@@ -272,5 +304,11 @@ h1.welcome {
 @media  (max-width: 767px) {
     #searchBtn {
         display: none;
+    }
+}
+
+@media (max-width: 1263px) {
+    .aboutus-pic .container-photo {
+        margin-bottom: 28px;
     }
 }
