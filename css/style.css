@@ -308,6 +308,7 @@ h1.welcome {
     font-weight: 400;
     font-size: 18px;
     color: #fff;
+    margin: 0;
 }
 /*******************/
 
@@ -326,5 +327,29 @@ h1.welcome {
 @media (max-width: 1263px) {
     .aboutus-pic .container-photo {
         margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 1003px) {
+    .facts-text {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 853px) {
+    .facts-text {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 719px) {
+    .facts-text {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 781px) {
+    .facts-numbers {
+        font-size: 86px;
     }
 }
