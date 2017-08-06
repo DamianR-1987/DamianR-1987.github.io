@@ -247,7 +247,6 @@ h1.welcome {
     background: linear-gradient(to bottom, rgba(252,227,138,0.3) 0%,rgba(252,227,138,0.5) 51%,rgba(252,227,138,1) 100%) no-repeat;
     background: -moz-linear-gradient(top, rgba(252,227,138,0.3) 0%, rgba(252,227,138,0.5) 51%, rgba(252,227,138,1) 100%) no-repeat;
     background: -webkit-linear-gradient(top, rgba(252,227,138,0.3) 0%,rgba(252,227,138,0.5) 51%,rgba(252,227,138,1) 100%) no-repeat;
-    /*background-color: #008cba;*/
 }
 
 .aboutus-pic .container-photo:hover .photo-caption {
@@ -274,25 +273,42 @@ h1.welcome {
 
 .facts {
     display: flex;
+    justify-content: center;
     height: 272px;
     background-color: #95e1d3;
 }
 
 .vertical-line {
-    /*display: inline-block;*/
     width: 4px;
     height: 100%;
     background-color: #b5eae0;
 }
-/*
+
+.facts-center {
+    display: flex;
+    width: 83%;
+    height: 100%;
+    align-items: center;
+}
+
+.facts-content {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .facts-numbers {
-    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    color: #fff;
 }
 
 .facts-text {
-    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
 }
-*/
 /*******************/
 
 @media (min-width: 768px){
