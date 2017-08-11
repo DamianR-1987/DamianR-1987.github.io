@@ -367,6 +367,22 @@ h1.welcome {
     right: -259px;
 }
 /*******************/
+/* Section service2 */
+.service2-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #999;   
+}
+
+.service2 .panel-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+}
+/*******************/
 @media (min-width: 768px){
     .navbar>.container .navbar-brand {
         margin-left: 1px;
