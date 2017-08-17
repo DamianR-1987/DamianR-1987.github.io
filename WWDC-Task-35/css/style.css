@@ -380,12 +380,15 @@ h1.welcome {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    color: #333;
     text-align: left;
 }
 
 .service2 .panel-title img {
     margin-right: 14px;
+}
+
+.service2 .panel-title a {
+    color: #333;
 }
 
 .service2 .panel-body {
@@ -396,6 +399,31 @@ h1.welcome {
     color: #999;
     text-align: left;
 }
+
+.service2 .panel-group .panel {
+    border-radius: 0px;
+}
+
+.service2 .panel {
+    border-radius: 0px;
+}
+
+.service2 .panel-default > .panel-heading {
+    background-color: #fff;
+}
+
+.panel-heading .accordion-toggle:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e260";
+    float: right;
+    color: #ccc;
+    margin-top: 8px;
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+    content: "\e259";
+}
+
 /*******************/
 @media (min-width: 768px){
     .navbar>.container .navbar-brand {
