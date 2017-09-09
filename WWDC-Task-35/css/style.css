@@ -425,6 +425,44 @@ h1.welcome {
 }
 
 /*******************/
+/* Section quote */
+.quote {
+    background-color: #f8f8f8;
+}
+
+.quote .item img {
+    border: 2px solid #95e1d3;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 40px;
+    float: left;
+    margin-right: 60px;
+}
+
+.quote .carousel p {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 22px;
+    text-align-last: left;
+    color: #999;
+    margin: 0;
+    padding-top: 70px;
+}
+
+.quote .carousel-control.left, .quote .carousel-control.right {
+    background-image: none
+}
+
+.quote .carousel {
+    background-color: #f8f8f8;
+}
+
+.quote .carousel-flexbox {
+    margin: 0 auto;
+    width: 75%;
+}
+/*******************/
 @media (min-width: 768px){
     .navbar>.container .navbar-brand {
         margin-left: 1px;
