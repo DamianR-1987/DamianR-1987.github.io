@@ -466,3 +466,9 @@ h1.welcome {
         font-size: 86px;
     }
 }
+
+@media  (max-width: 1199px) {
+    .service2 .panel-group {
+        margin-top: 20px;
+    }
+}
