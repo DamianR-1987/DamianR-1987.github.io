@@ -71,7 +71,4 @@ $(document).ready(function () {
     slider();
     searchButton();
     showShoppingCartModal();
-    $('.carousel').carousel({
-        interval: false
-    })
 });

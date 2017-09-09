@@ -104,8 +104,8 @@ h1.welcome {
 }
 
 .line {
-    width: 30px;
-    height: 3px;
+    width: 62px;
+    height: 5px;
     background: #fff;
     border: 0px;
 }
@@ -204,7 +204,7 @@ h1.welcome {
 }
 
 .line.black {
-    background: #000;
+    background: #f38181;
     margin: 0 auto;
     margin-top: 39px;
     margin-bottom: 46px;
@@ -439,7 +439,7 @@ h1.welcome {
     margin-right: 60px;
 }
 
-.quote .carousel p {
+.quote .carousel blockquote {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: 300;
@@ -448,6 +448,17 @@ h1.welcome {
     color: #999;
     margin: 0;
     padding-top: 70px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    border: none;
+}
+
+.quote .carousel cite {
+    display: inline-block;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 32px;
+    color: #333;
 }
 
 .quote .carousel-control.left, .quote .carousel-control.right {
@@ -461,6 +472,21 @@ h1.welcome {
 .quote .carousel-flexbox {
     margin: 0 auto;
     width: 75%;
+}
+
+.quote .carousel .glyphicon {
+    top: 50%;
+}
+
+.quote .carousel-control {
+    color: #ccc;
+    text-shadow: none;
+}
+
+.quote .line.black {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 /*******************/
 @media (min-width: 768px){
