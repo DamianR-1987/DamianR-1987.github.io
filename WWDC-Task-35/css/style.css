@@ -210,11 +210,12 @@ h1.welcome {
     margin-bottom: 46px;
 }
 
-.aboutus-text {
-    margin-bottom: 100px;
+.section-text {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 20px;
-    color: #999;   
+    color: #999;
+    margin-bottom: 86px;
 }
 
 .aboutus-pic .container-photo {
@@ -258,7 +259,6 @@ h1.welcome {
 }
 
 .aboutus-pic .photo-caption-content {
-    width: 161px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #fff;
@@ -368,14 +368,6 @@ h1.welcome {
 }
 /*******************/
 /* Section service2 */
-.service2-text {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: #999;
-    margin-bottom: 86px;
-}
-
 .service2 .panel-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -487,6 +479,20 @@ h1.welcome {
     display: inline-block;
     margin-bottom: 10px;
     margin-right: 10px;
+}
+/*******************/
+/* Section ourteam */
+.ourteam .container-photo .photo-caption .socials {
+    background-color: #fce38a;
+}
+
+.ourteam .container-photo .photo-caption .socials img {
+    padding: 9px;
+    border-right: 1px solid #f38181;
+}
+
+.ourteam .container-photo .photo-caption .socials img:last-child {
+    border: none;
 }
 /*******************/
 @media (min-width: 768px){
