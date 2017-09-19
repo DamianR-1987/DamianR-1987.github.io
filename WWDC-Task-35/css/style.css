@@ -536,3 +536,9 @@ h1.welcome {
         margin-top: 20px;
     }
 }
+
+@media  (max-width: 887px) {
+    .quote .carousel blockquote {
+        font-size: 15px;
+    }
+}
