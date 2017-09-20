@@ -483,12 +483,33 @@ h1.welcome {
 /*******************/
 /* Section ourteam */
 .ourteam .container-photo .photo-caption .socials {
-    background-color: #fce38a;
+    /*background-color: #fce38a;*/
+    width: 215px;
 }
 
 .ourteam .container-photo .photo-caption .socials img {
-    padding: 9px;
+    background-color: #fce38a;
     border-right: 1px solid #f38181;
+}
+
+.ourteam .container-photo .photo-caption .socials img:hover {
+    background-color: #f38181;
+}
+
+.ourteam .container-photo .photo-caption .socials .facebook{
+    padding: 10px 17px;
+}
+
+.ourteam .container-photo .photo-caption .socials .instagram{
+    padding: 11px 10px;
+}
+
+.ourteam .container-photo .photo-caption .socials .pinterest{
+    padding: 10px 13px;
+}
+
+.ourteam .container-photo .photo-caption .socials .twitter{
+    padding: 13px 11px;
 }
 
 .ourteam .container-photo .photo-caption .socials img:last-child {

@@ -1,388 +1,457 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Weekly WebDev Challenge - Task 35</title>
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
-        <link href="./css/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&amp;subset=latin-ext" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin-ext" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,700" rel="stylesheet">
-    </head>
-    <body>
-      
-       <!-- ShoppingCardModal -->
-       <div class="modal fade" id="shoppingCartModal" tabindex="-1" role="dialog" aria-labelledby="shoppingCartModalLabel">
-           <div class="modal-dialog" role="document">
-               <div class="modal-content">
-                   <div class="modal-header">
-                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                       <h4 class="modal-title" id="shoppingCartModalLabel">Shopping Cart</h4>
-                   </div>
-                   <div class="modal-body">
-                       <h5 class="text-center bg-info text-muted">Your shopping cart is empty</h5>
-                   </div>
-                   <div class="modal-footer">
-                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                       <button type="button" class="btn btn-primary">Buy</button>
-                   </div>
-               </div>
-           </div>
-       </div>
-       <!-- -->
-       
-        <div class="container-fluid">
-            <div class="row">
-                <section class="col-xs-12 banner slide_1">
-                   
-                    <nav class="navbar navbar-default navbar-static-top">
-                        <div class="container">
-                            <div class="navbar-header">
-                               
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="menu">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                
-                                <a class="navbar-brand" href="#">MoGo</a>
-                            </div>
-                            
-                            <div class="collapse navbar-collapse" id="menu">
-                                <ul class="nav navbar-nav navbar-right">
-                                    <li class="text-uppercase"><a href="#about">about<span class="sr-only">(current)</span></a></li>
-                                    <li class="text-uppercase"><a href="#service">service</a></li>
-                                    <li class="text-uppercase"><a href="#">work</a></li>
-                                    <li class="text-uppercase"><a href="#">blog</a></li>
-                                    <li><a href="#" aria-label="Shopping cart" id="shoppingCartBtn" data-toggle="modal" data-target="#ShoppingCartModal"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
-                                    <form id="searchForm" class="navbar-form navbar-left" role="search">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Search">
-                                        </div>
-                                        <button type="submit" class="btn btn-link text-uppercase" id="btn-find">Find</button>
-                                    </form>
-                                    <li id="searchBtn"><a href="#" aria-label="Search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-
-                    <div class="row">
-                        <div class="col-xs-6 col-xs-offset-3"><h1 class="creative text-center">Creative Template</h1></div>
-                        <div class="col-xs-9 col-xs-offset-1 col-md-7 col-md-offset-2 col-lg-6 col-lg-offset-3"><h1 class="welcome text-center text-uppercase"><b>welcome to mogo</b></h1></div>
-                        <div class="col-xs-4 col-xs-offset-4"><hr class="line text-center"></div>
-                        <div class="col-xs-4 col-xs-offset-4 text-center"><button class="btn btn-learn-more btn-sm text-uppercase" type="button">learn more</button> </div>
-                    </div>
-                    
-                    <div class="row progress-bars-row">
-                        <div class="col-xs-2 col-xs-offset-2">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar"></div>
-                            </div>
-                            <div class="progress-bar-caption text-uppercase"><p><b>01</b> intro</p></div>
-                        </div>
-                        <div class="col-xs-2">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar"></div>
-                            </div>
-                            <div class="progress-bar-caption text-uppercase"><p><b>02</b> work</p></div>
-                        </div>
-                        <div class="col-xs-2">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar"></div>
-                            </div>
-                            <div class="progress-bar-caption text-uppercase"><p><b>03</b> about</p></div>
-                        </div>
-                        <div class="col-xs-2">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar"></div>
-                            </div>
-                            <div class="progress-bar-caption text-uppercase"><p><b>04</b> contacts</p></div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div class="row">
-                <section class="col-xs-12 aboutus text-center" id="about">
-                    <header class="section-header">
-                        <h1 class="section-header-text-one">What we do</h1>
-                        <h2 class="section-header-text-two text-uppercase">strory about us</h2>
-                        <div class="line black"></div>
-                    </header>
-                    <div class="section-content">
-                        <p class="section-text col-xs-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <div class="aboutus-pic">
-                            <div class="container-photo">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Weekly WebDev Challenge - Task 35</title>
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&amp;subset=latin-ext" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin-ext" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,700" rel="stylesheet">
+	</head>
+	<body>
+		<!-- ShoppingCardModal -->
+		<div class="modal fade" id="shoppingCartModal" tabindex="-1" role="dialog" aria-labelledby="shoppingCartModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="shoppingCartModalLabel">Shopping Cart</h4>
+					</div>
+					<div class="modal-body">
+						<h5 class="text-center bg-info text-muted">Your shopping cart is empty</h5>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Buy</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- -->
+		
+		<div class="container-fluid">
+			<div class="row">
+				<section class="col-xs-12 banner slide_1">
+					<nav class="navbar navbar-default navbar-static-top">
+						<div class="container">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="menu">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="#">MoGo</a>
+							</div>
+							
+							<div class="collapse navbar-collapse" id="menu">
+								<ul class="nav navbar-nav navbar-right">
+									<li class="text-uppercase">
+										<a href="#about">about<span class="sr-only">(current)</span></a>
+									</li>
+									<li class="text-uppercase">
+										<a href="#service">service</a>
+									</li>
+									<li class="text-uppercase">
+										<a href="#">work</a>
+									</li>
+									<li class="text-uppercase">
+										<a href="#">blog</a>
+									</li>
+									<li>
+										<a href="#" aria-label="Shopping cart" id="shoppingCartBtn" data-toggle="modal" data-target="#ShoppingCartModal">
+											<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+										</a>
+									</li>
+									<form id="searchForm" class="navbar-form navbar-left" role="search">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Search">
+										</div>
+										<button type="submit" class="btn btn-link text-uppercase" id="btn-find">Find</button>
+									</form>
+									<li id="searchBtn">
+										<a href="#" aria-label="Search">
+											<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+					
+					<div class="row">
+						<div class="col-xs-6 col-xs-offset-3">
+							<h1 class="creative text-center">Creative Template</h1>
+						</div>
+						<div class="col-xs-9 col-xs-offset-1 col-md-7 col-md-offset-2 col-lg-6 col-lg-offset-3">
+							<h1 class="welcome text-center text-uppercase"><b>welcome to mogo</b></h1>
+						</div>
+						<div class="col-xs-4 col-xs-offset-4">
+							<hr class="line text-center">
+						</div>
+						<div class="col-xs-4 col-xs-offset-4 text-center">
+							<button class="btn btn-learn-more btn-sm text-uppercase" type="button">learn more</button>
+						</div>
+					</div>
+					
+					<div class="row progress-bars-row">
+						<div class="col-xs-2 col-xs-offset-2">
+							<div class="progress">
+								<div class="progress-bar" role="progressbar"></div>
+							</div>
+							<div class="progress-bar-caption text-uppercase">
+								<p><b>01</b> intro</p>
+							</div>
+						</div>
+						
+						<div class="col-xs-2">
+							<div class="progress">
+								<div class="progress-bar" role="progressbar"></div>
+							</div>
+							<div class="progress-bar-caption text-uppercase">
+								<p><b>02</b> work</p>
+							</div>
+						</div>
+						
+						<div class="col-xs-2">
+							<div class="progress">
+								<div class="progress-bar" role="progressbar"></div>
+							</div>
+							<div class="progress-bar-caption text-uppercase">
+								<p><b>03</b> about</p>
+							</div>
+						</div>
+						
+						<div class="col-xs-2">
+							<div class="progress">
+								<div class="progress-bar" role="progressbar"></div>
+							</div>
+							<div class="progress-bar-caption text-uppercase">
+								<p><b>04</b> contacts</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			
+			<div class="row">
+				<section class="col-xs-12 aboutus text-center" id="about">
+					<header class="section-header">
+						<h1 class="section-header-text-one">What we do</h1>
+						<h2 class="section-header-text-two text-uppercase">strory about us</h2>
+						<div class="line black"></div>
+					</header>
+					<div class="section-content">
+						<p class="section-text col-xs-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<div class="aboutus-pic">
+							<div class="container-photo">
 								<img src="img/aboutus1.png" alt="about_us_photo" class="image">
 								<div class="photo-caption">
-								    <div class="photo-caption-content">
-								        <img src="img/aboutus_users.png" alt="users icon">
-                                        <p>super team</p>
-								    </div>
+									<div class="photo-caption-content">
+										<img src="img/aboutus_users.png" alt="users icon">
+										<p>super team</p>
+									</div>
 								</div>
 							</div>
+							
 							<div class="container-photo">
 								<img src="img/aboutus2.png" alt="about_us_photo" class="image">
 								<div class="photo-caption">
-								    <div class="photo-caption-content">
-								        <img src="img/aboutus_users.png" alt="users icon">
-                                        <p>super team</p>
-								    </div>
+									<div class="photo-caption-content">
+										<img src="img/aboutus_users.png" alt="users icon">
+										<p>super team</p>
+									</div>
 								</div>
 							</div>
+							
 							<div class="container-photo">
-								<img src="img/aboutus3.png" alt="about_us_photo" class="image"> 
+								<img src="img/aboutus3.png" alt="about_us_photo" class="image">
 								<div class="photo-caption">
-								    <div class="photo-caption-content">
-								        <img src="img/aboutus_users.png" alt="users icon">
-                                        <p>super team</p>
-								    </div>
+									<div class="photo-caption-content">
+										<img src="img/aboutus_users.png" alt="users icon">
+										<p>super team</p>
+									</div>
 								</div>
 							</div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div class="row">
-                <section class="col-xs-12 facts">
-                   <div class="facts-center">
-                        <div class="vertical-line"></div>
-                        <div class="facts-content">
-                            <span class="facts-numbers">42</span>
-                            <p class="facts-text text-uppercase">web design projects</p>
-                        </div>
-                        <div class="vertical-line"></div>
-                        <div class="facts-content">
-                            <span class="facts-numbers">123</span>
-                            <p class="facts-text text-uppercase">happy client</p>
-                        </div>
-                        <div class="vertical-line"></div>
-                        <div class="facts-content">
-                            <span class="facts-numbers">15</span>
-                            <p class="facts-text text-uppercase">award winner</p>
-                        </div>
-                        <div class="vertical-line"></div>
-                        <div class="facts-content">
-                            <span class="facts-numbers">99</span>
-                            <p class="facts-text text-uppercase">cup of coffee</p>
-                        </div>
-                        <div class="vertical-line"></div>
-                        <div class="facts-content">
-                            <span class="facts-numbers">24</span>
-                            <p class="facts-text text-uppercase">members</p>
-                        </div>
-                        <div class="vertical-line"></div>
-                    </div>
-                </section>
-            </div>
-            <div class="row">
-                <section class="col-xs-10 col-xs-offset-1 service text-center" id="service">
-                    <header class="section-header">
-                        <h1 class="section-header-text-one">We work with</h1>
-                        <h2 class="section-header-text-two text-uppercase">amazing services</h2>
-                        <div class="line black"></div>
-                    </header>
-                    <div class="row">
-                        <div class="service-element col-xs-4">
-                            <img src="img/alaram_icon.png" alt="alarm icon">
-                            <p class="service-element-header text-uppercase">photography</p>
-                            <p class="service-element-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="service-element col-xs-4">
-                            <img src="img/line_graph_icon.png" alt="line graph icon">
-                            <p class="service-element-header text-uppercase">web design</p>
-                            <p class="service-element-text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="service-element col-xs-4">
-                            <img src="img/computer_ok_icon.png" alt="computer icon">
-                            <p class="service-element-header text-uppercase">creativity</p>
-                            <p class="service-element-text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="line service-line col-xs-10"></div>
-                    </div>
-                    <div class="row">
-                        <div class="service-element col-xs-4">
-                            <img src="img/book_2_icon.png" alt="book icon">
-                            <p class="service-element-header text-uppercase">seo</p>
-                            <p class="service-element-text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        </div>
-                        <div class="service-element col-xs-4">
-                            <img src="img/home_icon.png" alt="home icon">
-                            <p class="service-element-header text-uppercase">css/html</p>
-                            <p class="service-element-text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
-                        </div>
-                        <div class="service-element col-xs-4">
-                            <img src="img/image_icon.png" alt="image icon">
-                            <p class="service-element-header text-uppercase">digital</p>
-                            <p class="service-element-text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div class="row">
-                <section class="col-xs-12 feature text-center">
-                    <header class="section-header">
-                        <h1 class="section-header-text-one">For all devices</h1>
-                        <h2 class="section-header-text-two text-uppercase">unique design</h2>
-                        <div class="line black"></div>
-                    </header>
-                    <div class="row">
-                        <div class="feature-devices col-xs-6 col-xs-offset-1 col-sm-offset-2 col-md-offset-3">
-                            <img class="feature-devices-tablet" src="img/tablet.png" alt="tablet photo">
-                            <img class="feature-devices-smartphone" src="img/phone.png" alt="smartphone photo">
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div class="row">
-                <section class="col-xs-12 service2 text-center">
-                    <header class="section-header">
-                        <h1 class="section-header-text-one">Service</h1>
-                        <h2 class="section-header-text-two text-uppercase">what we do</h2>
-                        <div class="line black"></div>
-                    </header>
-                    <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="row">
-                        <div class="service2-content col-xs-10 col-xs-offset-1">
-                            <img class="col-xs-12 col-lg-6" src="img/service.png" alt="service photo">
-                            <div class="panel-group col-xs-12 col-lg-6" id="accordion" role="tablist" aria-multiselectable="true">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingOne">
-                                        <h4 class="panel-title text-uppercase">
-                                                <img src="img/picture_icon.png" alt="picture icon">
-                                                <a class="accordion-toggle" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">photography</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingTwo">
-                                        <h4 class="panel-title text-uppercase">
-                                            <img src="img/equalizer_icon.png" alt="equalizer icon">
-                                            <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">creativity</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingThree">
-                                        <h4 class="panel-title text-uppercase">
-                                            <img src="img/bullseye_icon.png" alt="bullseye icon">
-                                            <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">web design</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-xs-12 quote">
-                    <div id="carousel-example-generic" class="carousel slide col-xs-10 col-xs-offset-1" data-ride="carousel">
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                               <div class="carousel-flexbox">
-                                   <img src="img/speech_icon.png" alt="speech icon">
-                                   <blockquote>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</blockquote>
-                                   <div class="line black"></div><cite>Jon Doe</cite>
-                               </div>
-                            </div>
-                            <div class="item">
-                                <div class="carousel-flexbox">
-                                    <img src="img/speech_icon.png" alt="speech icon">
-                                    <blockquote>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</blockquote>
-                                    <div class="line black"></div>
-                                    <cite>Jon Doe</cite>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="carousel-flexbox">
-                                   <img src="img/speech_icon.png" alt="speech icon">
-                                   <blockquote>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</blockquote>
-                                   <div class="line black"></div>
-                                   <cite>Jon Doe</cite>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </section>
-            </div>
-            <div class="row">
-                <section class="col-xs-12 ourteam text-center">
-                    <header class="section-header">
-                        <h1 class="section-header-text-one">Who we are</h1>
-                        <h2 class="section-header-text-two text-uppercase">meet our team</h2>
-                        <div class="line black"></div>
-                    </header>
-                    <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="aboutus-pic">
-                            <div class="container-photo">
-								<img src="img/matthew.png" alt="graphic design photo" class="image">
-								<div class="photo-caption">
-								    <div class="photo-caption-content">
-                                        <div class="socials">
-								            <img src="img/facebook.svg" alt="facebook">
-								            <img src="img/instagram.svg" alt="instagram">
-								            <img src="img/pinterest.svg" alt="pinterest">
-								            <img src="img/twitter.svg" alt="twitter">
-								        </div>
-								    </div>
+						</div>
+					</div>
+				</section>
+			</div>
+			
+			<div class="row">
+				<section class="col-xs-12 facts">
+					<div class="facts-center">
+						<div class="vertical-line"></div>
+						
+						<div class="facts-content">
+							<span class="facts-numbers">42</span>
+							<p class="facts-text text-uppercase">web design projects</p>
+						</div>
+						
+						<div class="vertical-line"></div>
+						<div class="facts-content">
+							<span class="facts-numbers">123</span>
+							<p class="facts-text text-uppercase">happy client</p>
+						</div>
+						
+						<div class="vertical-line"></div>
+						<div class="facts-content">
+							<span class="facts-numbers">15</span>
+							<p class="facts-text text-uppercase">award winner</p>
+						</div>
+							
+						<div class="vertical-line"></div>
+						<div class="facts-content">
+							<span class="facts-numbers">99</span>
+							<p class="facts-text text-uppercase">cup of coffee</p>
+						</div>
+						
+						<div class="vertical-line"></div>
+						<div class="facts-content">
+							<span class="facts-numbers">24</span>
+							<p class="facts-text text-uppercase">members</p>
+						</div>
+						
+						<div class="vertical-line"></div>
+					</div>
+				</section>
+			</div>
+			
+			<div class="row">
+				<section class="col-xs-10 col-xs-offset-1 service text-center" id="service">
+					<header class="section-header">
+						<h1 class="section-header-text-one">We work with</h1>
+						<h2 class="section-header-text-two text-uppercase">amazing services</h2>
+						<div class="line black"></div>
+					</header>
+					
+					<div class="row">
+						<div class="service-element col-xs-4">
+							<img src="img/alaram_icon.png" alt="alarm icon">
+							<p class="service-element-header text-uppercase">photography</p>
+							<p class="service-element-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+						</div>
+						
+						<div class="service-element col-xs-4">
+							<img src="img/line_graph_icon.png" alt="line graph icon">
+							<p class="service-element-header text-uppercase">web design</p>
+							<p class="service-element-text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+						</div>
+						
+						<div class="service-element col-xs-4">
+							<img src="img/computer_ok_icon.png" alt="computer icon">
+							<p class="service-element-header text-uppercase">creativity</p>
+							<p class="service-element-text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="line service-line col-xs-10"></div>
+					</div>
+					
+					<div class="row">
+						<div class="service-element col-xs-4">
+							<img src="img/book_2_icon.png" alt="book icon">
+							<p class="service-element-header text-uppercase">seo</p>
+							<p class="service-element-text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+						</div>
+						
+						<div class="service-element col-xs-4">
+							<img src="img/home_icon.png" alt="home icon">
+							<p class="service-element-header text-uppercase">css/html</p>
+							<p class="service-element-text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
+						</div>
+						
+						<div class="service-element col-xs-4">
+							<img src="img/image_icon.png" alt="image icon">
+							<p class="service-element-header text-uppercase">digital</p>
+							<p class="service-element-text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			
+			<div class="row">
+				<section class="col-xs-12 feature text-center">
+					<header class="section-header">
+						<h1 class="section-header-text-one">For all devices</h1>
+						<h2 class="section-header-text-two text-uppercase">unique design</h2>
+						<div class="line black"></div>
+					</header>
+					
+					<div class="row">
+						<div class="feature-devices col-xs-6 col-xs-offset-1 col-sm-offset-2 col-md-offset-3">
+							<img class="feature-devices-tablet" src="img/tablet.png" alt="tablet photo">
+							<img class="feature-devices-smartphone" src="img/phone.png" alt="smartphone photo">
+						</div>
+					</div>
+				</section>
+			</div>
+			
+			<div class="row">
+				<section class="col-xs-12 service2 text-center">
+					<header class="section-header">
+						<h1 class="section-header-text-one">Service</h1>
+						<h2 class="section-header-text-two text-uppercase">what we do</h2>
+						<div class="line black"></div>
+					</header>
+					<p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					
+					<div class="row">
+						<div class="service2-content col-xs-10 col-xs-offset-1">
+							<img class="col-xs-12 col-lg-6" src="img/service.png" alt="service photo">
+							<div class="panel-group col-xs-12 col-lg-6" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOne">
+										<h4 class="panel-title text-uppercase">
+											<img src="img/picture_icon.png" alt="picture icon">
+											<a class="accordion-toggle" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">photography</a>
+										</h4>
+									</div>
+									
+									<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+										<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+									</div>
+								</div>
+								
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingTwo">
+										<h4 class="panel-title text-uppercase">
+											<img src="img/equalizer_icon.png" alt="equalizer icon">
+											<a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">creativity</a>
+										</h4>
+									</div>
+									
+									<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+										<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+									</div>
+								</div>
+								
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingThree">
+										<h4 class="panel-title text-uppercase">
+											<img src="img/bullseye_icon.png" alt="bullseye icon">
+											<a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">web design</a>
+										</h4>
+									</div>
+									
+									<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+										<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+									</div>
 								</div>
 							</div>
-							<div class="container-photo">
-								<img src="img/christopher.png" alt="branding ux design photo" class="image">
-								<div class="photo-caption">
-								    <div class="photo-caption-content">
-								        <div class="socials">
-								            <img src="img/facebook.svg" alt="facebook">
-								            <img src="img/instagram.svg" alt="instagram">
-								            <img src="img/pinterest.svg" alt="pinterest">
-								            <img src="img/twitter.svg" alt="twitter">
-								        </div>
-								    </div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="col-xs-12 quote">
+					<div id="carousel-example-generic" class="carousel slide col-xs-10 col-xs-offset-1" data-ride="carousel">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<div class="carousel-flexbox">
+									<img src="img/speech_icon.png" alt="speech icon">
+									<blockquote>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</blockquote>
+									<div class="line black"></div>
+									<cite>Jon Doe</cite>
 								</div>
 							</div>
-							<div class="container-photo">
-								<img src="img/michael.png" alt="developer photo" class="image"> 
-								<div class="photo-caption">
-								    <div class="photo-caption-content">
-								        <div class="socials">
-								            <img src="img/facebook.svg" alt="facebook">
-								            <img src="img/instagram.svg" alt="instagram">
-								            <img src="img/pinterest.svg" alt="pinterest">
-								            <img src="img/twitter.svg" alt="twitter">
-								        </div>
-								    </div>
+							
+							<div class="item">
+								<div class="carousel-flexbox">
+									<img src="img/speech_icon.png" alt="speech icon">
+									<blockquote>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</blockquote>
+									<div class="line black"></div>
+									<cite>Jon Doe</cite>
 								</div>
 							</div>
-                        </div>
-                </section>
-            </div>
-        </div>
-        <script src="./js/jquery-3.2.1.min.js"></script>
-        <script src="./js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+							
+							<div class="item">
+								<div class="carousel-flexbox">
+									<img src="img/speech_icon.png" alt="speech icon">
+									<blockquote>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</blockquote>
+									<div class="line black"></div>
+									<cite>Jon Doe</cite>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						
+						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</section>
+			</div>
+			
+			<div class="row">
+				<section class="col-xs-12 ourteam text-center">
+					<header class="section-header">
+						<h1 class="section-header-text-one">Who we are</h1>
+						<h2 class="section-header-text-two text-uppercase">meet our team</h2>
+						<div class="line black"></div>
+					</header>
+					<p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<div class="aboutus-pic">
+						<div class="container-photo">
+							<img src="img/matthew.png" alt="graphic design photo" class="image">
+							<div class="photo-caption">
+								<div class="photo-caption-content">
+									<div class="socials">
+										<img src="img/facebook.svg" alt="facebook" class="facebook">
+										<img src="img/twitter.svg" alt="twitter" class="twitter">
+										<img src="img/pinterest.svg" alt="pinterest" class="pinterest">
+										<img src="img/instagram.svg" alt="instagram" class="instagram">
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="container-photo">
+							<img src="img/christopher.png" alt="branding ux design photo" class="image">
+							<div class="photo-caption">
+								<div class="photo-caption-content">
+									<div class="socials">
+										<img src="img/facebook.svg" alt="facebook" class="facebook">
+										<img src="img/twitter.svg" alt="twitter" class="twitter">
+										<img src="img/pinterest.svg" alt="pinterest" class="pinterest">
+										<img src="img/instagram.svg" alt="instagram" class="instagram">
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="container-photo">
+							<img src="img/michael.png" alt="developer photo" class="image">
+							<div class="photo-caption">
+								<div class="photo-caption-content">
+									<div class="socials">
+										<img src="img/facebook.svg" alt="facebook" class="facebook">
+										<img src="img/twitter.svg" alt="twitter" class="twitter">
+										<img src="img/pinterest.svg" alt="pinterest" class="pinterest">
+										<img src="img/instagram.svg" alt="instagram" class="instagram">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
