@@ -483,21 +483,21 @@ h1.welcome {
 /*******************/
 /* Section ourteam */
 .ourteam .container-photo .photo-caption .socials {
-    /*background-color: #fce38a;*/
+	display: flex;
     width: 215px;
 }
 
-.ourteam .container-photo .photo-caption .socials img {
+.ourteam .container-photo .photo-caption .socials div {
     background-color: #fce38a;
     border-right: 1px solid #f38181;
 }
 
-.ourteam .container-photo .photo-caption .socials img:hover {
+.ourteam .container-photo .photo-caption .socials div:hover {
     background-color: #f38181;
 }
 
 .ourteam .container-photo .photo-caption .socials .facebook{
-    padding: 10px 17px;
+    padding: 10.5px 17px;
 }
 
 .ourteam .container-photo .photo-caption .socials .instagram{
@@ -505,15 +505,19 @@ h1.welcome {
 }
 
 .ourteam .container-photo .photo-caption .socials .pinterest{
-    padding: 10px 13px;
+    padding: 10.5px 13px;
 }
 
 .ourteam .container-photo .photo-caption .socials .twitter{
     padding: 13px 11px;
 }
 
-.ourteam .container-photo .photo-caption .socials img:last-child {
+.ourteam .container-photo .photo-caption .socials div:last-child {
     border: none;
+}
+
+.ourteam .container-photo .photo-caption .photo-caption-content {
+	font-size: 0;
 }
 /*******************/
 @media (min-width: 768px){
