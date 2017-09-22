@@ -196,7 +196,7 @@ h1.welcome {
 
 .section-header-text-two {
     margin: 0;
-    margin-top: 23px
+    margin-top: 23px;
     margin-bottom: 39px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -482,6 +482,30 @@ h1.welcome {
 }
 /*******************/
 /* Section ourteam */
+.ourteam .container-photo {
+	height: 472px;
+}
+
+.ourteam .container-photo .photo-team_surname {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: #333;
+	margin: 30px 0 10px;
+}
+
+.ourteam .container-photo .photo-team_speciality {
+	font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    color: #999;
+}
+
+.ourteam .container-photo .photo-caption .photo-caption-content {
+	font-size: 0;
+}
+
 .ourteam .container-photo .photo-caption .socials {
 	display: flex;
     width: 215px;
@@ -512,13 +536,6 @@ h1.welcome {
     padding: 13px 11px;
 }
 
-.ourteam .container-photo .photo-caption .socials div:last-child {
-    border: none;
-}
-
-.ourteam .container-photo .photo-caption .photo-caption-content {
-	font-size: 0;
-}
 /*******************/
 @media (min-width: 768px){
     .navbar>.container .navbar-brand {
