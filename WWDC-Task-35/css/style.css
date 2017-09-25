@@ -484,6 +484,7 @@ h1.welcome {
 /* Section ourteam */
 .ourteam .container-photo {
 	height: 472px;
+	margin-bottom: 228px;
 }
 
 .ourteam .container-photo .photo-team_surname {
@@ -537,6 +538,17 @@ h1.welcome {
 }
 
 /*******************/
+/* Section logos */
+.logos {
+	display: flex;
+	justify-content: space-around;
+	background-color: #f5f5f5;
+}
+
+.logos img {
+	margin: 50px 0;
+}
+/*******************/
 @media (min-width: 768px){
     .navbar>.container .navbar-brand {
         margin-left: 1px;
@@ -553,6 +565,10 @@ h1.welcome {
     .aboutus-pic .container-photo {
         margin-bottom: 28px;
     }
+	
+	.logos {
+		margin-top: 200px;
+	}
 }
 
 @media (max-width: 1003px) {
