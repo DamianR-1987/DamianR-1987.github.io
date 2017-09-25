@@ -250,7 +250,7 @@ h1.welcome {
     background: -webkit-linear-gradient(top, rgba(252,227,138,0.3) 0%,rgba(252,227,138,0.5) 51%,rgba(252,227,138,1) 100%) no-repeat;
 }
 
-.aboutus-pic .container-photo:hover .photo-caption {
+.aboutus-pic .container-photo .photo-caption:hover {
     opacity: 1;
     
     -webkit-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
@@ -589,4 +589,16 @@ h1.welcome {
     .quote .carousel blockquote {
         font-size: 15px;
     }
+}
+
+@media  (max-width: 1231px) {
+    .ourteam .aboutus-pic .container-photo:nth-child(3) {
+		margin-top: 30px;
+	}
+}
+
+@media  (max-width: 849px) {
+    .ourteam .aboutus-pic .container-photo:nth-child(2) {
+		margin-top: 30px;
+	}
 }
