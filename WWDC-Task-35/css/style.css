@@ -588,14 +588,24 @@ h1.welcome {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
-	text-transform: uppercase;
 }
-/*
-font-family: 'Montserrat', sans-serif;
+
+.work .work-pic .box .photo-caption .photo-caption-content p {
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	color: #fff;
-	font-size: 19px;
-	*/
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+.work .work-pic .box .photo-caption .photo-caption-content span {
+	font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;	
+}
 /*******************/
 @media (min-width: 768px){
     .navbar>.container .navbar-brand {
@@ -664,5 +674,24 @@ font-family: 'Montserrat', sans-serif;
 @media  (max-width: 849px) {
     .ourteam .aboutus-pic .container-photo:nth-child(2) {
 		margin-top: 30px;
+	}
+}
+
+@media  (max-width: 1000px) {
+    .work .work-pic {
+		column-count: 2;
+		column-gap: 0;
+	}
+}
+
+@media (min-width: 1001px) and (max-width: 1307px) {
+    .work .work-pic .box .photo-caption .photo-caption-content p {
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 1001px) and (max-width: 1049px) {
+    .work .work-pic .box .photo-caption .photo-caption-content span {
+		font-size: 13px;
 	}
 }
