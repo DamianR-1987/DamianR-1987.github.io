@@ -607,6 +607,73 @@ h1.welcome {
     color: #fff;	
 }
 /*******************/
+/* Section testimonial */
+.testimonial {
+    background-color: #fff;
+}
+
+.testimonial .item img {
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 0px solid #000000;
+	
+    margin-top: 70px;
+    margin-bottom: 70px;
+    float: left;
+    margin-right: 60px;
+}
+
+.testimonial .carousel blockquote {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: left;
+    color: #999;
+    margin: 0;
+    padding-top: 70px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    border: none;
+}
+
+.testimonial .carousel cite {
+    display: inline-block;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 32px;
+    color: #333;
+}
+
+.testimonial .carousel-control.left, .testimonial .carousel-control.right {
+    background-image: none
+}
+
+.testimonial .carousel {
+    background-color: #fff;
+}
+
+.testimonial .carousel-flexbox {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.testimonial .carousel .glyphicon {
+    top: 50%;
+}
+
+.testimonial .carousel-control {
+    color: #ccc;
+    text-shadow: none;
+}
+
+.testimonial .line.black {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+/*******************/
 @media (min-width: 768px){
     .navbar>.container .navbar-brand {
         margin-left: 1px;
@@ -663,6 +730,10 @@ h1.welcome {
     .quote .carousel blockquote {
         font-size: 15px;
     }
+	
+	.testimonial .carousel blockquote {
+        font-size: 15px;
+    }
 }
 
 @media  (max-width: 1231px) {
@@ -693,5 +764,23 @@ h1.welcome {
 @media (min-width: 1001px) and (max-width: 1049px) {
     .work .work-pic .box .photo-caption .photo-caption-content span {
 		font-size: 13px;
+	}
+}
+
+@media  (max-width: 889px) {
+	.testimonial .carousel blockquote {
+		font-size: 15px;
+	}
+}
+
+@media  (max-width: 877px) {
+	.testimonial .carousel cite {
+		font-size: 18px;
+	}
+	
+	.testimonial .line.black {
+		width: 30px;
+		height: 3px;
+		margin-bottom: 6px;
 	}
 }
