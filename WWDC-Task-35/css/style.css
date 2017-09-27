@@ -674,6 +674,27 @@ h1.welcome {
     margin-right: 10px;
 }
 /*******************/
+/* Section whatpeoplesay */
+.whatpeoplesay .whatpeoplesay-content {
+	column-count: 2;
+}
+
+.whatpeoplesay .whatpeoplesay-content .whatpeoplesay-box img {
+	float: left;
+}
+
+.whatpeoplesay .whatpeoplesay-content .whatpeoplesay-box p {
+	text-align: left;
+}
+
+.whatpeoplesay .whatpeoplesay-content .whatpeoplesay-box span {
+	text-align: left;
+}
+
+.whatpeoplesay .whatpeoplesay-content .whatpeoplesay-box .whatpeoplesay-people_text {
+	text-align: left;
+}
+/*******************/
 @media (min-width: 768px){
     .navbar>.container .navbar-brand {
         margin-left: 1px;
