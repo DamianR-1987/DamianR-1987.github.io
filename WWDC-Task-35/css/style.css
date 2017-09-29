@@ -732,7 +732,36 @@ h1.welcome {
 .whatpeoplesay .whatpeoplesay-content .whatpeoplesay-box .line.black {
 	margin-left: 142px;
 }
+/*******************/
+/* Section blog */
+.blog .blog-pic {
+	column-count:3;
+}
 
+.blog .blog-pic .blog-pic-box .blog-photo {
+	width: 300px;
+}
+
+.blog .blog-pic .blog-pic-box .blog-pic-box-date {
+	width: 90px;
+	background-color: #95e1d3;
+	line-height: 1;
+}
+
+.blog .blog-pic .blog-pic-box .blog-pic-box-date time {
+	font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+	padding: 0 calc(50% - 25px);
+}
+
+.blog .blog-pic .blog-pic-box .blog-pic-box-date span {
+	font-size: 27px;
+	font-weight: 300;
+	padding: 0 calc(50% - 30px);
+}
 /*******************/
 @media (min-width: 768px){
     .navbar>.container .navbar-brand {
