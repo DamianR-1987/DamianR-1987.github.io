@@ -734,33 +734,70 @@ h1.welcome {
 }
 /*******************/
 /* Section blog */
-.blog .blog-pic {
-	column-count:3;
-}
-
-.blog .blog-pic .blog-pic-box .blog-photo {
-	width: 300px;
+.blog .blog-pic .blog-pic-box {
+	position: relative;
+	display: inline-block;
+	width: 382px;
+	margin: 0 33px
 }
 
 .blog .blog-pic .blog-pic-box .blog-pic-box-date {
-	width: 90px;
+	position: absolute;
+	width: 60px;
+	height: 70px;
 	background-color: #95e1d3;
-	line-height: 1;
+	line-height: 0.8;
+	padding: 10px 14px;
+	top: 162px;
+	left: -10px;
 }
 
 .blog .blog-pic .blog-pic-box .blog-pic-box-date time {
-	font-family: 'Roboto', sans-serif;
-    font-style: italic;
+	font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
-	padding: 0 calc(50% - 25px);
 }
 
 .blog .blog-pic .blog-pic-box .blog-pic-box-date span {
-	font-size: 27px;
+	font-family: 'Roboto', sans-serif;
+    font-style: italic;
+	font-size: 20px;
 	font-weight: 300;
-	padding: 0 calc(50% - 30px);
+}
+
+.blog-pic .blog-pic-box .blog-pic-box-comment .comment-header {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+	margin: 20px 0;
+}
+
+.blog-pic .blog-pic-box .blog-pic-box-comment .comment {
+	font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999;
+}
+
+.blog-pic .blog-pic-box .vertical-line {
+	width: 380px;
+	height: 1px;
+	background-color: #e5e5e5;
+	margin: 20px 0;
+}
+
+.blog-pic .blog-pic-box .number_of_views,
+.blog-pic .blog-pic-box .number_of_comments {
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    color: #999;
+	margin-left: 10px;
+	margin-right: 20px;
 }
 /*******************/
 @media (min-width: 768px){
