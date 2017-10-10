@@ -800,6 +800,60 @@ h1.welcome {
 	margin-right: 20px;
 }
 /*******************/
+/* Section map */
+.map {
+	position: relative;
+	margin-top: 120px;
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,0.85) 100%), url("../img/map_background.png") center/cover no-repeat;
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,0.85) 100%), url("../img/map_background.png") center/cover no-repeat;
+    background: linear-gradient(to bottom,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,0.85) 100%), url("../img/map_background.png") center/cover no-repeat;
+}
+
+.map img {
+	margin-top: 60px;
+}
+
+.map .open_map {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #f38181;
+	margin: 20px 0;
+}
+
+.map .close_map {
+	display: block;
+	float: left;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #f38181;
+}
+
+.map .open_map:hover {
+	text-decoration: none;
+}
+
+.map .close_map:hover {
+	text-decoration: none;
+}
+
+.map .row .google_map {
+	display: block;
+	position: absolute;
+	padding: 0;
+	top: 0;
+}
+
+.map .row .google_map.map_close {
+	display: none;
+}
+
+.map .row .google_map iframe {
+	width: 100%;
+}
+/*******************/
 @media (min-width: 768px){
     .navbar>.container .navbar-brand {
         margin-left: 1px;

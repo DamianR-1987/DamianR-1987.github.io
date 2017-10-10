@@ -78,10 +78,27 @@ function clean(node) {
 	}
 }
 
+function map(){
+	var $open_map = $("#open_map");
+	var $close_map = $("#close_map");
+	var $google_map = $("#google_map");
+	
+	$open_map.on("click", function (e) {
+		e.preventDefault();
+		$google_map.toggleClass("map_close");
+	});
+	
+	$close_map.on("click", function (e) {
+		e.preventDefault();
+		$google_map.toggleClass("map_close");
+	});
+}
+
 $(document).ready(function () {
     current();
     slider();
     searchButton();
     showShoppingCartModal();
 	clean(document);
+	map();
 });
