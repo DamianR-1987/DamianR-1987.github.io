@@ -916,3 +916,21 @@ h1.welcome {
 		column-count: 1;
 	}
 }
+
+@media (min-width: 962px) and (max-width: 1343px){
+    .blog .blog-pic .blog-pic-box:first-child {
+		margin-left: calc(50% - 382px);
+	}
+	
+	.blog .blog-pic .blog-pic-box:last-child {
+		margin-left: calc(50% - 224px);
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 961px){
+	.blog .blog-pic .blog-pic-box {
+		margin-left: calc(50% - 224px);
+		margin-top: 20px;
+	}
+}
