@@ -840,16 +840,16 @@ h1.welcome {
 }
 
 .map .row .google_map {
-	display: block;
+	display: none;
 	position: absolute;
 	padding: 0;
 	top: 0;
 }
-
+/*
 .map .row .google_map.map_close {
-	display: none;
+	opacity: 0;
 }
-
+*/
 .map .row .google_map iframe {
 	width: 100%;
 }

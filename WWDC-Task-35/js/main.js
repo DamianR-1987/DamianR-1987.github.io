@@ -85,12 +85,12 @@ function map(){
 	
 	$open_map.on("click", function (e) {
 		e.preventDefault();
-		$google_map.toggleClass("map_close");
+		$google_map.fadeIn("slow");
 	});
 	
 	$close_map.on("click", function (e) {
 		e.preventDefault();
-		$google_map.toggleClass("map_close");
+		$google_map.fadeOut("slow");
 	});
 }
 
