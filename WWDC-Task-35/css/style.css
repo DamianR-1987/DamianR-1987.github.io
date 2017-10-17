@@ -859,6 +859,7 @@ footer {
 	background-color: #f8f8f8;
 }
 
+/*footer-info*/
 .footer-info {
 	
 }
@@ -868,6 +869,54 @@ footer {
     font-weight: 700;
     font-size: 24px;
     color: #ccc;
+	text-align: left;
+	margin-bottom: 40px;
+}
+
+.footer-info-info {
+	font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #999;
+	text-align: left;
+	margin-bottom: 40px;
+}
+
+.footer-info-followers {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #333;
+	text-align: left;
+}
+
+.footer-info-followers span {
+    font-weight: 700;
+}
+
+footer .footer-info .vertical-line {
+	width: 480px;
+	height: 1px;
+	background-color: #e5e5e5;
+}
+
+.footer-info-icons {
+	margin-bottom: 40px;
+}
+
+.footer-info-icons-followUs {
+	float: left;
+	font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+	color: #999;
+	padding-top: 14px;
+	padding-right: 10px;
+}
+
+.footer-info-icons img {
+	padding: 20px 10px;
 }
 
 .footer-info-subscribe .form-group {
@@ -894,10 +943,21 @@ footer {
 	color: #e7e7e7;
 }
 
+.footer-info-subscribe .btn-link {
+	width: 150px;
+	height: 40px;
+	background-color: #95e1d3;
+	color: #fff;
+	font-weight: 700;
+	margin-bottom: 1px;
+}
+
+/*footer-blogs*/
 .footer-blogs {
 	
 }
 
+/*footer-instagram*/
 .footer-instagram {
 	
 }
