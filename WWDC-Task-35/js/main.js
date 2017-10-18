@@ -82,15 +82,18 @@ function map(){
 	var $open_map = $("#open_map");
 	var $close_map = $("#close_map");
 	var $google_map = $("#google_map");
+	var $footer = $("footer");
 	
 	$open_map.on("click", function (e) {
 		e.preventDefault();
 		$google_map.fadeIn("slow");
+		$footer.addClass("open_map");
 	});
 	
 	$close_map.on("click", function (e) {
 		e.preventDefault();
 		$google_map.fadeOut("slow");
+		$footer.removeClass("open_map");
 	});
 }
 

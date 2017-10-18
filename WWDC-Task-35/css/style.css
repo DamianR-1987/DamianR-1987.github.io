@@ -860,6 +860,10 @@ footer {
 	margin-left: 25px;
 }
 
+footer.open_map {
+	margin-top: 360px;
+}
+
 .footer-headers {
 	font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -956,7 +960,8 @@ footer .footer-info .vertical-line {
 	background-color: #95e1d3;
 	color: #fff;
 	font-weight: 700;
-	margin-bottom: 1px;
+	margin-bottom: 3px;
+	margin-top: 1px;
 }
 
 .footer-blogs-blog {
