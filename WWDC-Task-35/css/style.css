@@ -857,20 +857,27 @@ h1.welcome {
 /* footer */
 footer {
 	background-color: #f8f8f8;
+	margin-left: 25px;
 }
 
-/*footer-info*/
-.footer-info {
-	
+.footer-headers {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+	text-align: left;
+	margin-top: 80px;
+	margin-bottom: 40px;
 }
 
 .footer-info-logo {
 	font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 54px;
     color: #ccc;
 	text-align: left;
 	margin-bottom: 40px;
+	margin-top: 70px;
 }
 
 .footer-info-info {
@@ -895,7 +902,7 @@ footer {
 }
 
 footer .footer-info .vertical-line {
-	width: 480px;
+	width: 100%;
 	height: 1px;
 	background-color: #e5e5e5;
 }
@@ -952,14 +959,72 @@ footer .footer-info .vertical-line {
 	margin-bottom: 1px;
 }
 
-/*footer-blogs*/
-.footer-blogs {
-	
+.footer-blogs-blog {
+	margin-bottom: 30px;
 }
 
-/*footer-instagram*/
-.footer-instagram {
-	
+.footer-blogs-blog img {
+	float: left;
+	margin-right: 20px;
+}
+
+.footer-blogs-blog-content {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+	text-align: left;
+}
+
+.footer-blogs-blog time {
+	font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 17px;
+    color: #999;
+    text-align: left;
+}
+
+.footer-instagram-thumbnails-row {
+	float: left;
+}
+
+.footer-instagram-thumbnails-row:nth-child(3){
+	margin: 2px 0;
+}
+
+.footer-instagram-thumbnails-row img:nth-child(2) {
+	margin: 0 2px;
+}
+
+.footer-instagram a {
+	display: block;
+	clear: both;
+	font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 17.3px;
+    color: #333;
+    text-align: left;
+	padding-top: 20px;
+}
+
+.footer-copyright {
+	margin-top: 70px;
+}
+
+.footer-copyright .vertical-line {
+	width: 100%;
+	height: 1px;
+	background-color: #e5e5e5;
+}
+
+.footer-copyright-content {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18.6px;
+    color: #333;
+	text-align: center;
 }
 /*******************/
 @media (min-width: 768px){
