@@ -994,12 +994,8 @@ footer .footer-info .vertical-line {
 	float: left;
 }
 
-.footer-instagram-thumbnails-row:nth-child(3){
-	margin: 2px 0;
-}
-
-.footer-instagram-thumbnails-row img:nth-child(2) {
-	margin: 0 2px;
+.footer-instagram-thumbnails-row img {
+	border: 2px solid #fff;
 }
 
 .footer-instagram a {
@@ -1172,3 +1168,56 @@ footer .footer-info .vertical-line {
 		margin-left: calc(50% - 639px);
 	}
 }
+
+@media (min-width: 992px) and (max-width: 1199px){
+	.footer-instagram .footer-headers, .footer-instagram a {
+		text-align: center;
+	}
+		
+	.footer-instagram-thumbnails-row:nth-child(2) {
+		margin-left: calc(50% - 402px);
+	}
+	
+}
+
+@media (max-width: 991px) {
+	footer {
+		margin-top: -80px;
+		margin-left: 0;
+	}
+	
+	.footer-info-logo,
+	.footer-info-followers,
+	.footer-info-icons,
+	.footer-info-subscribe,
+	.footer-headers, .footer-instagram a {
+		text-align: center;
+	}
+	
+	.footer-info-icons-followUs {
+		float: none;
+	}
+	
+	.footer-blogs-blog {
+		margin-left: calc(50% - 311.5px);
+	}
+	
+	.footer-instagram-thumbnails-row:nth-child(2) {
+		margin-left: calc(50% - 402px);
+	}
+}
+
+@media (max-width: 881px) {
+	.footer-instagram-thumbnails-row, .footer-instagram-thumbnails-row:nth-child(2) {
+		float: none;
+		margin-left: calc(50% - 134px);
+	}
+}
+
+@media (max-width: 767px) {
+	.footer-info-logo {
+		padding-top: 70px;
+	}
+}
+
+/* Responsywność od 715 do x - ucina tło na dole */
