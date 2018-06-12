@@ -99,3 +99,52 @@ nav ul li a {
 .about_img {
 	padding-top: 165px;
 }
+
+.about_text_2 {
+	float: right;
+	margin-right: 225px;
+}
+
+.about_text_2 .about_text_header_title {
+	padding-top: 0;
+}
+
+.about_text_2 .about_text_text {
+	width: 526px;
+}
+
+.about_text_2 ol {
+	font-family: 'Poppins', sans-serif;
+	font-size: 10pt;
+	color: #999;
+	text-align: left;
+	list-style: none;
+	padding-left: 0;
+}
+
+.about_text_2 ol li:first-child {
+	margin-bottom: 50px;
+}
+
+.about_text_2 ol li {
+	margin-top: 30px;
+}
+
+.about_text_2 ol span.about_text_header_title_number {
+	font-family: 'PT Serif', serif;
+	font-size: 12pt;
+	color: #fff;
+	text-align: center;
+	background-color: #66a900;
+	padding: 15px 22px;
+	border-radius: 200px;
+}
+
+.number_border {
+	background-color: #fff;
+	border: 2px solid #66a900;
+	border-radius: 200px;
+	padding: 21px 3px;
+	padding-bottom: 19px;
+	margin-right: 17px;
+}
